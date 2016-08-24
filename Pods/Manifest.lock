@@ -1,0 +1,13 @@
+PODS:
+  - Alamofire (3.4.1)
+  - RappleProgressHUD (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - RappleProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  RappleProgressHUD: 8b20270859792fb03ea8b2cece54126daa31b84e
+
+COCOAPODS: 0.39.0

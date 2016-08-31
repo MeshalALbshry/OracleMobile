@@ -9,6 +9,9 @@
 import UIKit
 
 class CustomersDeatilsViewController: UIViewController {
+    
+    @IBOutlet weak var oScroll: UIScrollView!
+    
     //customer
     @IBOutlet weak var cName: UILabel!
     @IBOutlet weak var cProject: UILabel!
@@ -41,6 +44,8 @@ class CustomersDeatilsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //scroll View
+        self.oScroll.contentSize.height = 900
         //Customer
         self.cName.text = self.cNameS
         self.cProject.text = self.cProjectS

@@ -9,6 +9,7 @@
 import UIKit
 
 class TeamDeatilsViewController: UIViewController {
+    @IBOutlet weak var oScroll: UIScrollView!
     //team
     @IBOutlet weak var tImage: UIImageView!
     @IBOutlet weak var tName: UILabel!
@@ -38,6 +39,7 @@ class TeamDeatilsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.oScroll.contentSize.height = 900
         //team
         self.tName.text = self.tNameS
         self.tImage.image = self.urlToImage(self.tImageS)

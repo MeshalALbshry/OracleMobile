@@ -11,6 +11,9 @@ import RappleProgressHUD
 
 class ProductsDetailsViewController: UIViewController {
     
+    //scroll Veiw
+    @IBOutlet weak var oScroll: UIScrollView!
+    
     @IBOutlet weak var uImage: UIImageView!
     @IBOutlet weak var uName: UILabel!
     @IBOutlet weak var uFamily: UILabel!
@@ -45,6 +48,7 @@ class ProductsDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.oScroll.contentSize.height = 1000
 //        RappleActivityIndicatorView.startAnimating()
         //prodcuts
         self.uName.text = self.uNameS

@@ -31,6 +31,7 @@ class PartnersViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Partners"
         Alamofire.request(.GET, self.url)
             .responseJSON { response in
                 

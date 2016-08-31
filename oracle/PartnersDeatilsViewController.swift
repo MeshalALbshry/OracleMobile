@@ -10,6 +10,7 @@ import UIKit
 
 class PartnersDeatilsViewController: UIViewController {
     
+    @IBOutlet weak var oScroll: UIScrollView!
     //partners
     @IBOutlet weak var pImage: UIImageView!
     @IBOutlet weak var pName: UILabel!
@@ -41,6 +42,8 @@ class PartnersDeatilsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //scroll View
+        self.oScroll.contentSize.height = 800
         //partners
         self.pImage.image = self.urlToImage(self.pImageS)
         self.pName.text = self.pNameS

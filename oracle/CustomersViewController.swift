@@ -36,6 +36,7 @@ class CustomersViewController: UIViewController,UITableViewDelegate,UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         self.oIndictoer.startAnimating()
+        self.title = "Customers"
         
         Alamofire.request(.GET, self.url)
             .responseJSON { response in

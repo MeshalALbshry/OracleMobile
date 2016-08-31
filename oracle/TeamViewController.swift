@@ -32,6 +32,7 @@ class TeamViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Team"
         Alamofire.request(.GET, self.url)
             .responseJSON { response in
                 

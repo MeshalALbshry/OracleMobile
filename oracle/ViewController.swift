@@ -21,7 +21,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //---NavigationBar
         self.title = "Oracle"
         let nav = self.navigationController?.navigationBar
-        nav?.barTintColor = UIColor(red:0.70, green:0.07, blue:0.14, alpha:1.00)
+        nav?.barTintColor = UIColor(red:0.94, green:0.05, blue:0.10, alpha:1.00)
         nav?.tintColor = UIColor(red:0.93, green:0.97, blue:0.99, alpha:1.00)
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:0.93, green:0.97, blue:0.99, alpha:1.00)]
         
